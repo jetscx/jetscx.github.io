@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Add custom CSS for layout and styling -->
+    <style>
+      /* General body style */
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      /* Navigation bar styling */
+      nav {
+        background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+      }
+
+      /* Home section background, set to high-quality and not pixelated */
+      #home {
+        background-image: url('https://i.ibb.co/zFRVJsP/hero-bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      /* Removing background for highlights */
+      #highlights {
+        background-color: white;
+        padding: 60px 0;
+      }
+
+      /* Card styling */
+      .card {
+        margin: 20px 0; /* Added margin for spacing between cards */
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .navbar-nav .nav-link:hover {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+
+      .nav-link {
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Tourist Site</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#highlights">Highlights</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+      <div class="container">
+        <h1>Welcome to the Best Tourist Spots</h1>
+        <p>Explore the beauty of Indonesia!</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-light">
+      <div class="container">
+        <div class="section-title">About</div>
+        <p>Indonesia is a breathtaking archipelago comprised of over 17,000 islands, each offering its own distinct beauty and allure. From the serene beaches of Bali to the majestic volcanoes of Java, the country is a treasure trove of natural wonders that captivates travelers from around the world. Its rich biodiversity is home to unique flora and fauna, making it a haven for nature lovers and adventure seekers alike. Visitors can indulge in various outdoor activities, such as hiking, diving, and exploring lush rainforests, all while soaking in the stunning landscapes that define this tropical paradise.</p>
+        <p>Beyond its natural beauty, Indonesia is renowned for its rich cultural heritage and diversity, with over 300 ethnic groups and a multitude of languages spoken throughout the archipelago. This cultural richness is reflected in the country's vibrant traditions, arts, and culinary delights, making it an exciting destination for travelers seeking authentic experiences. From the bustling markets of Jakarta to the tranquil villages of Ubud, visitors can immerse themselves in local customs and savor delicious Indonesian cuisine. The warm hospitality of the Indonesian people further enhances the travel experience, inviting everyone to explore the enchanting stories and traditions that shape this incredible nation.</p>
+      </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section id="highlights">
+      <div class="container">
+        <div class="section-title">Highlights</div>
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://i.pinimg.com/564x/0b/40/7f/0b407f324f3948b4b5878e834d4839a2.jpg" class="card-img-top" alt="highlight-1">
+              <div class="card-body">
+                <p class="card-text">Bali.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://i.pinimg.com/564x/a1/71/9a/a1719a7765428eb512ff97a079ee2983.jpg" class="card-img-top" alt="highlight-2">
+              <div class="card-body">
+                <p class="card-text">Jakarta.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://i.pinimg.com/736x/fe/91/03/fe9103c8fc6256df6bc74e60f739bfbc.jpg" class="card-img-top" alt="highlight-3">
+              <div class="card-body">
+                <p class="card-text">Yogyakarta.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://i.pinimg.com/564x/1d/7c/fc/1d7cfc98acf03a02b4c373443f265695.jpg" class="card-img-top" alt="highlight-4">
+              <div class="card-body">
+                <p class="card-text">Komodo National Park.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://i.pinimg.com/564x/8b/1b/1d/8b1b1da0aeabf57198e0b89388a66813.jpg" class="card-img-top" alt="highlight-5">
+              <div class="card-body">
+                <p class="card-text">Tana Toraja.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://i.pinimg.com/564x/26/bb/55/26bb55c30d55b73fe898433c227c16ba.jpg" class="card-img-top" alt="highlight-6">
+              <div class="card-body">
+                <p class="card-text">Raja Ampat.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://i.pinimg.com/564x/e8/27/35/e8273568e8cf04d41219a2b3442fcc28.jpg" class="card-img-top" alt="highlight-7">
+              <div class="card-body">
+                <p class="card-text">Bromo-Tengger-Semeru National Park (Mount Bromo).</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://i.pinimg.com/564x/40/64/70/406470093158d2e19db10aa70d147acd.jpg" class="card-img-top" alt="highlight-8">
+              <div class="card-body">
+                <p class="card-text">Lake Toba.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 9 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://i.pinimg.com/564x/93/d4/13/93d413b2879d2a4985ebf1c07687c7a9.jpg" class="card-img-top" alt="highlight-9">
+              <div class="card-body">
+                <p class="card-text"> Flores.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light">
+      <div class="container">
+        <div class="section-title">Contact</div>
+        <p>For inquiries, please reach us at <a href="mailto:info@touristsite.com">info@touristsite.com</a></p>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
